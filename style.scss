@@ -1,0 +1,449 @@
+@charset "UTF-8";
+
+/*
+
+Style   : MobApp CSS
+Version : 1.0
+Author  : Surjith S M
+URI     : https://surjithctly.in/
+
+Copyright © All rights Reserved
+
+*/
+
+/* GLOBAL
+----------------------*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+$hue: 200;
+$txt-col-primary: hsl(211, 100%, 62%);
+$main-col: hsl(200, 100%, 50%);
+$second-col: hsl(230, 100%, 45%);
+
+.owl-carousel {
+  display: none !important;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  position: relative;
+  background-color: hsl(188, 38%, 97%);
+}
+
+a {
+  color: hsl($hue, 61%, 72%);
+
+  &:hover,
+  &:focus {
+    color: hsl(230, 59%, 61%);
+  }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin-bottom: 1.5rem;
+  margin-top: 10vh;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 300;
+  color: $txt-col-primary;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  color: $txt-col-primary;
+  font-size: 33px;
+  font-weight: 500;
+}
+
+h4 {
+  color: $txt-col-primary;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 28px;
+  font-weight: 300;
+  color: $txt-col-primary;
+  margin-bottom: 0.7rem;
+}
+
+p {
+  color: hsl($hue, 2%, 57%);
+
+  &.lead {
+    color: hsl($hue+30, 61%, 72%);
+    margin-bottom: 2rem;
+  }
+}
+
+ul {
+  color: hsl($hue, 2%, 57%);
+
+  &:before {
+    margin-bottom: 0 !important;
+  }
+}
+
+hr {
+  margin: 1rem auto;
+  width: 50vw;
+  border: 0;
+  border-top-color: currentcolor;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+
+}
+
+.white {
+  color: white;
+}
+
+.text-primary {
+  color: $txt-col-primary !important;
+  filter: brightness(1.2) contrast(.4);
+}
+
+.light-font {
+  font-weight: 300;
+}
+
+.btn {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 0.375rem 1.35rem;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  color: hsl(230, 59%, 61%);
+}
+
+.light-bg {
+  background-color: hsl(188, 38%, 97%);
+}
+
+.section {
+  padding: 80px 0 0 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  small {
+    color: hsl(193, 8%, 57%);
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
+
+/* NAVBAR
+----------------------*/
+
+.navbar-brand {
+  img {
+    max-height: 50px;
+  }
+}
+
+.nav-menu {
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+
+  &.is-scrolling,
+  &.menu-is-open {
+    background-color: hsl(212, 83%, 31%);
+    background: -moz-linear-gradient(135deg, $main-col 0%, #0058db 100%);
+    background: -webkit-linear-gradient(135deg, $main-col 0%, #0058db 100%);
+    background: linear-gradient(135deg, $main-col 0%, #0058db 100%);
+    -webkit-box-shadow: 0px 5px 23px 0px hsla(0, 0%, 0%, 0.1);
+    -moz-box-shadow: 0px 5px 23px 0px hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0px 5px 23px 0px hsla(0, 0%, 0%, 0.1);
+  }
+
+  &.is-scrolling {
+    padding: 0;
+  }
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 14px;
+  }
+
+  .navbar-nav>.nav-item>.nav-link.active:after {
+    content: "";
+    border-bottom: 2px solid hsl(193, 41%, 72%);
+    left: 1rem;
+    right: 1rem;
+    bottom: 5px;
+    height: 1px;
+    position: absolute;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    &.is-scrolling {
+      padding-bottom: 1rem;
+    }
+
+    .nav-item {
+      text-align: center;
+    }
+  }
+}
+
+/* HERO
+----------------------*/
+
+header {
+  padding: 100px 0 0;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background-image: -moz-linear-gradient(135deg, $main-col 0%, $second-col 100%);
+  background-image: -webkit-linear-gradient(135deg, $main-col 0%, $second-col 100%);
+  background-image: -ms-linear-gradient(135deg, $main-col 0%, $second-col 100%);
+  background-image: linear-gradient(135deg, $main-col 0%, $second-col 100%);
+}
+
+.tagline {
+  font-size: 23px;
+  font-weight: 300;
+  color: hsl(207, 100%, 86%);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.img-holder {
+  img {
+    max-width: 40vh;
+    margin: 3em 0;
+  }
+
+  // height: 0;
+  // padding-bottom: 33%;
+  // overflow: hidden;
+}
+
+/* FEATURES
+----------------------*/
+
+.gradient-fill:before {
+  color: hsl(231, 95%, 71%);
+  background: -moz-linear-gradient(top, $main-col 0%, $txt-col-primary 100%);
+  background: -webkit-linear-gradient(top, $main-col 0%, $txt-col-primary 100%);
+  background: linear-gradient(to bottom, $main-col 0%, $txt-col-primary 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card.features {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 5px 7px 0px hsla(0, 0%, 0%, 0.04);
+  transition: all 0.3s ease;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    color: hsl(231, 95%, 71%);
+    background: -moz-linear-gradient(top, $main-col 0%, $txt-col-primary 100%);
+    background: -webkit-linear-gradient(top, $main-col 0%, $txt-col-primary 100%);
+    background: linear-gradient(to bottom, $main-col 0%, $txt-col-primary 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .feather {
+    font-size: 3.5em;
+    margin-top: -.2em;
+    margin-right: 1rem;
+    background: -webkit-linear-gradient($main-col, $txt-col-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (max-width: 991px) {
+  .card.features {
+    margin-bottom: 2rem;
+  }
+
+  [class^="col-"]:last-child .card.features {
+    margin-bottom: 0;
+  }
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card.features:hover {
+  transform: translateY(-3px);
+  -moz-box-shadow: 0px 5px 30px 0px #00000014;
+  -webkit-box-shadow: 0px 5px 30px 0px #00000014;
+  box-shadow: 0px 5px 30px 0px hsla(0, 0%, 0%, 0.08);
+}
+
+/*  klienci
+----------------------*/
+
+.owl-carousel {
+  border-left: 1px solid rgba(10, 10, 10, .1);
+  border-right: 1px solid rgba(10, 10, 10, .1);
+  overflow: hidden;
+  height: 8em;
+
+  .owl-item {
+    float: left;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto !important;
+    height: 8em;
+    margin-right: 50px;
+    img {
+      max-height: 100px;
+      max-width: 200px;
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+  }
+}
+
+// .disabled {
+//   display: none;
+// }
+
+/*  ZESPOL
+----------------------*/
+
+.testimonials-single {
+  text-align: center;
+  float: left;
+  // max-width: 80%;
+  margin: 0 0;
+
+  img.client-img {
+    width: 110px;
+    margin: 35px auto 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 9px 32px 0px hsla(0, 0%, 0%, 0.07);
+  }
+
+  img.main-img {
+    width: 135px;
+    margin: 10px auto 0 auto;
+    border-radius: 50%;
+    box-shadow: 0px 9px 32px 0px hsla(0, 0%, 0%, 0.07);
+  }
+}
+
+@media (max-width:768px) {
+  #WH {
+    order: 1;
+  }
+
+  #TD {
+    order: 2;
+  }
+
+  #RD {
+    order: 3;
+  }
+}
+
+.blockquote {
+  color: hsl(200, 1%, 47%);
+  font-weight: 300;
+}
+
+
+// FAQ
+
+.accordion{
+  margin-bottom: 2em;
+  .card {
+    border: none;
+    background-color: hsl(188, 38%, 97%);
+  }
+  .card-header {
+    padding: .75rem 0;
+    background-color: hsl(188, 38%, 97%);
+    border: none;
+  }
+  .card-body {
+    padding: .75rem 0;
+    border-top: 1px solid rgba(0,0,0,.125);
+  }
+}
+
+/*  CONTACT
+----------------------*/
+
+.kontakt {
+  color: white;
+  margin: 0 auto;
+  padding: 5em 0;
+  width: 17em;
+
+  h2 {
+    // text-align: center;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .tagline {
+    font-size: 16px;
+    font-weight: 300;
+    color: hsl(207, 100%, 86%);
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  .icon-smartphone {
+    font-size: 4em;
+  }
+
+  .kontakt-dane i {
+    margin-right: .5em;
+  }
+}
+
+#map {
+  height: 400px;
+}

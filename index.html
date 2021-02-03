@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<!--
+
+Page    : index / MobApp
+Version : 1.0
+Author  : Colorlib
+URI     : https://colorlib.com
+
+ -->
+
+<head>
+    <title>RODO Huczyński</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Zajmujemy się obsługą i wdrażaniem RODO - Rozporządzenia o Ochoronie Danych Osobowych.">
+    <meta name="keywords" content="rodo, wdrażanie, RODO, obsługa, ochrona danych osobowych, dane osobowe, instytucje publiczne, huczyński">
+
+    <!-- Font -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+            crossorigin="anonymous">
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+    integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+    <!-- Feather icons -->
+    <link rel="stylesheet" type="text/css" href="css/feather.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script> -->
+    <!-- <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css"> -->
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="/owlCarousel2/assets/owl.carousel.min.css" />
+    <!-- <link rel="stylesheet" href="/owlCarousel2/assets/owl.theme.defaut.min.css" /> -->
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- icons -->
+    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-32x32.png" sizes="32x32">
+    <link rel="icon" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-192x192.png" sizes="192x192">
+    <meta name="msapplication-TileImage" content="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-270x270.png"><link rel="apple-touch-icon-precomposed" href="http://wojciech.huczynski.pl/wp-content/uploads/2018/05/cropped-Logo_Wojtek-180x180.png">
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+    <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="http://wojciech.huczynski.pl"><img src="images/whu-logo-w.png" class="img-fluid" alt="logo">Huczyński</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link" href="#oferta">Oferta</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#klienci">Klienci</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#historia">Historia</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#zespol">Zespół</a> </li>
+                                <li class="nav-item"><a href="#contact" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">Kontakt</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>Obsługa i wdrażanie</h1>
+            <p class="tagline">Rozporządzenia o Ochronie Danych Osobowych<br>
+                <small style='opacity:.6;'>z dn. 27 kwietnia 2016</small> <br>
+                oraz Ustawy o ochronie danych osobowych<br>
+                <small style='opacity:.6;'>z dn. 10. maja 2018</small></p>
+        </div>
+        <div class="img-holder mt-3">
+            <img src="images/protection.svg" alt="ochrona" class="img-fluid">
+        </div>
+    </header>
+
+    <!-- OFERTA -->
+    <div class="section light-bg " id="oferta">
+        <div class="container">
+            <div class="section-title">
+                <small>Oferta</small>
+                <h3>W czym możemy pomóc</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 text-justify">
+                    <p>Firma Wojciech Huczyński zajmuje się kompleksową obsługą podmiotów i świadczeniem usług w zakresie ochrony danych osobowych. Od diagnozowania potrzeb danej organizacji, aż do finalnego przygotowania produktu jakim jest
+                        dostosowanie do wymogów RODO, a następnie obsługą w zakresie usług w tej dziedzinie – bieżącą i doraźną. Wykonujemy także funkcję Inspektora Ochrony Danych, wspomagając technicznie i prawnie współpracujące z nami jednostki,
+                        tak sektora finansów publicznych jak i podmioty prywatne.</p>
+                    <h4 class="text-center">Nasza oferta obejmuje między innymi:</h4>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-star"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Audyt</h4>
+                                    <p class="card-text">Przeprowadzanie audytów.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-user-plus"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Szkolenia</h4>
+                                    <p class="card-text">Oferujemy także szeroką gamę szkoleń dla każdego typu organizacji.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-shield"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Opiekę</h4>
+                                    <p class="card-text">W zakresie współpracy: jednostki pozostają pod bieżącym wsparciem naszych specjalistów.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-check"></i>
+                                <div class="media-body">
+                                    <h4 class="card-title">Ocena</h4>
+                                    <p class="card-text">Wykonywania ocen zawierających wytyczne dla danej organizacji w zakresie dostosowania działalności do wymogów prawnych RODO i Ustawy z dnia 10 maja 2018 r. o ochronie danych osobowych oraz
+                                        innych aktów prawnych regulujących materię danych osobowych.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 d-flex align-items-stretch">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <i class="feather icon-layers"></i>
+                                <!-- <i class="feather icon-paperclip"></i> -->
+                                <div class="media-body">
+                                    <h4 class="card-title">Wsparcie</h4>
+                                    <p class="card-text">Zapewniamy wsparcie w postaci przygotowania niezbędnej dokumentacji, upoważnień, umów oraz innych dokumentów wymaganych prawem ochrony danych osobowych.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    <hr>
+    <!-- // end .section -->
+    
+    <!-- KLIENCI -->
+    <div class="section light-bg text-justify" id="klienci">
+        <div class="container">
+            <div class="section-title">
+                <small>Klienci</small>
+                <h3>Instytucje, które nam zaufały</h3>
+            </div>
+            <div class="owl-carousel">
+                <div class="item">
+                    <img src="logos/1.png" alt="ochrona">
+                    <p>Klient 1</p>
+                </div>
+                <div class="item">
+                    <img src="logos/2.png" alt="ochrona">
+                    <p>Klient 2</p>
+                </div>
+                <div class="item">
+                    <p>Inny zespół <br>szkół gdzieśkąd</p>
+                </div>
+                <div class="item">
+                    <img src="logos/3.png" alt="ochrona">
+                    <p>Zespół szkół nr 1 <br> w Zwarze</p>
+                </div>
+                <div class="item">
+                    <img src="logos/4.png" alt="ochrona">
+                    <p>Klient 7</p>
+                </div>
+                <div class="item">
+                    <img src="logos/5.png" alt="ochrona">
+                    <p>Klient 8</p>
+                </div>
+                <div class="item">
+                    <img src="logos/6.png" alt="ochrona">
+                    <p>Klient 9</p>
+                </div>
+                <div class="item">
+                    <img src="logos/7.png" alt="ochrona">
+                    <p>Klient 10</p>
+                </div>
+                <div class="item">
+                    <img src="logos/8.png" alt="ochrona">
+                    <p>Klient 11</p>
+                </div>
+                <div class="item">
+                    <p>Instytucja taka a taka</p>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-12">
+                    <p class="light-font mb-5">Aktualnie obsługujemy podmioty administracji samorządowej w postaci urzędów gmin, urzędów miast oraz starostw powiatowych, jak i samorządowych jednostek organizacyjnych wykonujących ustawowe zadania samorządu gminnego lub powiatowego (przedszkola, szkoły podstawowe, szkoły ponadpodstawowe, samorządowe instytucje kultury, ośrodki pomocy społecznej, jednostki zabezpieczenia społecznego i socjalnego, ect.). Udzielamy też wsparcia podmiotom prawa handlowego realizującym w imieniu samorządów zadania własne, tj. spółek komunalnych świadczących usługi w zakresie zarządzania nieruchomościami, wywozu nieczystości lub dostarczania wody i odprowadzenia ścieków.  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- // end .section -->
+
+    <!-- HISTORIA -->
+    <div class="section light-bg text-justify" id="historia">
+        <div class="container">
+            <div class="section-title">
+                <small>Historia</small>
+                <h3>Wprowadzenie</h3>
+            </div>
+            <div class="row pt-4">
+                <div class="col-12 col-md-6">
+                    <p class="light-font mb-5">We współczesnym świecie oraz postępującym rozwoju technologicznym podjęcie informacji i związanych z nią części składowych, zyskuje coraz większe znaczenie. Informacją są nie tylko wiadomości - komunikaty o wydarzeniach, ale również i te, związane z naszą osobą, pracownikami w naszej firmie, instytucji. Te informacje o osobie tworzą grupę wiadomości, które na przełomie lat 60 i 70-tych minionego stulecia zaczęto określać pojęciem DANYCH OSOBOWYCH. Dzisiaj mamy już regulację europejską – RODO, której obowiązek stosowania został nałożony na wszystkie kraje członkowskie Unii Europejskiej od 25 maja 2017 r.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="light-font mb-5">O tym, że dane osobowe trzeba chronić wiemy doskonale wszyscy. Jednak proces dostosowania danej organizacji do wymogów prawnych i instytucjonalnych związanych z regulacjami europejskimi i polskimi może przysporzyć wielu trudności. Zwłaszcza, że przygotowanie a następnie właściwe prowadzenie polityki bezpieczeństwa wraz z ochroną danych osobowych wymaga zaangażowania wielu środków i kapitału pracowniczego. Z tego względu można powierzyć tę część naszej działalności specjalistom, którzy dostosują Państwa firmę, jednostkę budżetową czy inną samorządową instytucję do wymogów związanych z ochroną danych osobowych.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- // end .section -->
+
+    <!-- ZESPOL -->
+    <div class="section light-bg" id="zespol">
+        <div class="container">
+            <div class="section-title">
+                <small>Zespół</small>
+                <h3>Na piewszej lini</h3>
+            </div>
+            <div class="row">
+                <div class="testimonials-single col-12 col-md-4" id="TD">
+                    <img src="images/td.jpg" alt="client" class="client-img">
+                    <h5 class="mt-4 mb-2">Tomasz Dragan</h5>
+                    <p class="text-primary">-</p>
+                    <!-- <blockquote class="blockquote">Wieloletnie doświadczenie w orgranizacji i działaniu instytucji publicznych i miejskich.</blockquote> -->
+                </div>
+                <div class="testimonials-single col-12 col-md-4" id="WH">
+                    <img src="images/wh.jpg" alt="client" class="main-img">
+                    <h5 class="mt-4 mb-2">Wojciech Huczyński</h5>
+                    <p class="text-primary">Specjalista w dziedzinie IT, instytucji publicznych.</p>
+                    <!-- <blockquote class="blockquote">Wieloletnie doświadczenie w orgranizacji i działaniu instytucji publicznych i miejskich.</blockquote> -->
+                </div>
+                <div class="testimonials-single col-12 col-md-4" id="RD">
+                    <img src="images/rd.jpg" alt="client" class="client-img">
+                    <h5 class="mt-4 mb-2">Robert Duda</h5>
+                    <p class="text-primary">-</p>
+                    <!-- <blockquote class="blockquote">Wieloletnie doświadczenie w orgranizacji i działaniu instytucji publicznych i miejskich.</blockquote> -->
+                </div>
+            </div>
+            <div class="row pt-4 text-justify">
+                <div class="col-md-6">
+                    <p class="light-font">Nasz zespół tworzą osoby posiadające wykształcenie, <b class="text-primary">a przede wszystkim doświadczenie</b>, w zakresie świadczenia kompleksowej obsługi:</p>
+                    <ul class="light-font">
+                        <li>prawnej,</li>
+                        <li>informatycznej,</li>
+                        <li>administracyjno-skarbowej.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <p class="light-font mb-5">Współpracują z nami osoby posiadające doświadczenie w zakresie kierowania lub pracy w jednostkach organizacyjnych samorządu, administracji państwowej czy pracy na rzecz podmiotów prawa handlowego.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- <hr> -->
+    <!-- // end .section -->
+
+    <!-- FAQ -->
+    <div class="section pt-4 light-bg" style="display:none;">
+        <div class="container">
+            <div class="section-title">
+                <small>FAQ</small>
+                <h3>Często zadawane pytania?</h3>
+            </div>
+            <div class="accordion" id="accordionQuestions">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header" id="headingOne" type="button"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4 class="mb-0">Can I try before I buy?</h4>
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionQuestions">
+                                <div class="card-body">
+                                    <p class="light-font text-justify">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo" type="button"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4 class="mb-0">What payment methods do you accept?</h4>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionQuestions">
+                                <div class="card-body">
+                                    <p class="light-font text-justify">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-header" id="headingThree" type="button"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h4 class="mb-0">Can I change my plan later?</h4>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionQuestions">
+                                    <div class="card-body">
+                                        <p class="light-font text-justify">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour" type="button"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h4 class="mb-0">Do you have a contract?</h4>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionQuestions">
+                                    <div class="card-body">
+                                        <p class="light-font text-justify">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- // end .section -->
+
+
+    <!-- CONTACT -->
+    <div class="section pt-4 bg-gradient" id="contact">
+        <div class="container">
+            <div class="kontakt">
+                <div class="text-center">
+                    <i class="feather icon-smartphone"></i><br>
+                    <small class="tagline">W razie pytań</small>
+                    <h2>Napisz do nasz</h2>
+                </div>
+                <div class="kontakt-dane">
+                    <p class="mb-2 white"><i class="feather icon-mail"></i><a class="mr-4" href="mailto:kontakt@huczynski.pl">kontakt@huczynski.pl</a></p>
+                    <p class="mb-2 white"><i class="feather icon-map-pin"></i>Poprzeczna 15, 49-305 Brzeg</p>
+                    <!-- <p class="mb-2 white"><i class="feather icon-phone"></i>+48 000 000 000 <a href="tel:+48000000000"></a></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAP -->
+    <div class="section" style='padding:0;'>
+        <div id="map"></div>
+    </div>
+    <!-- // end .section -->
+
+
+    <footer class="my-5 text-center light-bg">
+        <!-- Copyright removal is not prohibited! -->
+        <p class="mb-2"><small>
+            COPYRIGHT © 2017. ALL RIGHTS RESERVED. MOBAPP TEMPLATE BY <a href="https://colorlib.com">COLORLIB</a><br>
+            Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> and <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </small></p>
+        <!-- <small>
+            <a href="#oferta" class="m-2">OFERTA</a>
+            <a href="#zespol" class="m-2">ZESPÓŁ</a>
+        </small> -->
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- owl carousel -->
+    <script src="owlCarousel2/owl.carousel.min.js"></script>
+    <!-- leaflet -->
+    <script src="js/leaflet-map.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
